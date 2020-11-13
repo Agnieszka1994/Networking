@@ -54,7 +54,7 @@ namespace net
 
 		// extracting data from vector
 		template<typename K>
-		friend msg<T>& operator<< (msg<T>& msg, const K& data)
+		friend msg<T>& operator >> (msg<T>& msg, K& data)
 		{
 			// check if the data type K can be serialized
 			static_assert(std::is_standard_layout<K>::value, "Data cannot be pushed into vector");
@@ -73,6 +73,23 @@ namespace net
 
 			// return the target message
 			return msg;
+		}
+	};
+
+	template<typename T>
+	class connection;
+
+	template<typename T>
+	struct ownedMessage
+	{
+		std::shared_ptr<connection<T>> remote = nullptr;
+		message<T> msg;
+
+		// overload output stream operator
+		friend std::ostream& operator<< (std::ostream& os, const ownedMessage<T>& msg)
+		{
+			os << msg.msg;
+			return os;
 		}
 	};
 }

@@ -4,13 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ASIOnetworking", "ASIOnetworking\ASIOnetworking.vcxproj", "{9DE1FC8C-19BA-4F8D-B6BA-9A322F3FCD6B}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetCommon", "NetCommon\NetCommon.vcxproj", "{7C1A4D8B-D318-42AC-8A64-F86D4FEC1297}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netClient", "netClient\netClient.vcxproj", "{92C9022F-FF73-4893-9CE7-AE7B87D9AECA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{7C1A4D8B-D318-42AC-8A64-F86D4FEC1297} = {7C1A4D8B-D318-42AC-8A64-F86D4FEC1297}
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetCommon", "NetCommon\NetCommon.vcxproj", "{7C1A4D8B-D318-42AC-8A64-F86D4FEC1297}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,14 +34,6 @@ Global
 		{7C1A4D8B-D318-42AC-8A64-F86D4FEC1297}.Release|x64.Build.0 = Release|x64
 		{7C1A4D8B-D318-42AC-8A64-F86D4FEC1297}.Release|x86.ActiveCfg = Release|Win32
 		{7C1A4D8B-D318-42AC-8A64-F86D4FEC1297}.Release|x86.Build.0 = Release|Win32
-		{92C9022F-FF73-4893-9CE7-AE7B87D9AECA}.Debug|x64.ActiveCfg = Debug|x64
-		{92C9022F-FF73-4893-9CE7-AE7B87D9AECA}.Debug|x64.Build.0 = Debug|x64
-		{92C9022F-FF73-4893-9CE7-AE7B87D9AECA}.Debug|x86.ActiveCfg = Debug|Win32
-		{92C9022F-FF73-4893-9CE7-AE7B87D9AECA}.Debug|x86.Build.0 = Debug|Win32
-		{92C9022F-FF73-4893-9CE7-AE7B87D9AECA}.Release|x64.ActiveCfg = Release|x64
-		{92C9022F-FF73-4893-9CE7-AE7B87D9AECA}.Release|x64.Build.0 = Release|x64
-		{92C9022F-FF73-4893-9CE7-AE7B87D9AECA}.Release|x86.ActiveCfg = Release|Win32
-		{92C9022F-FF73-4893-9CE7-AE7B87D9AECA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
